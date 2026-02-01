@@ -77,9 +77,13 @@
       <section class="bg-[#F0FDF4] md:h-[1100px] h-[2500px] flex items-center">
         <div class="w-[1400px] md:h-[920px] h-[2450px] pt-5 mx-auto">
           <h1 class="md:text-2xl text-center font-bold">Choose Your Trees</h1>
-          <div class="md:hidden w-[250px] pt-3 mx-auto">
-            <label for="cars">Categories:</label>
-            <select name="trees" id="trees">
+          <div class="md:hidden w-[400px] pt-3 mx-auto">
+            <select
+              class="bg-[#c4f2d6] text-black w-[400px] h-[50px] pl-5 rounded-lg focus:outline-hidden"
+              name="trees"
+              id="trees"
+            >
+              <option value="Categories">Categories</option>
               <option value="all_trees">All Trees</option>
               <option value="fruit_trees">Fruit Trees</option>
               <option value="flowering_trees">Flowering Trees</option>
@@ -95,16 +99,14 @@
           </div>
           <div class="md:w-full w-[300px] flex mx-auto">
             <div
-              class="mt-10 p-5 grid md:grid-cols-5 grid-cols-1 gap-5 md:w-full w-[300px] md:grid-rows-2 md:h-[800px] h-[2300px]"
+              class="mt-2 p-5 grid md:grid-cols-5 grid-cols-1 gap-5 md:w-full w-[300px] md:grid-rows-2 md:h-[800px] h-[2300px]"
             >
               <div
                 class="h-[750px] w-[250px] row-span-2 rounded-[5px] bg-white shadow-xl/30 md:block hidden"
               >
                 <ul class="p-5 flex flex-col gap-2">
                   <li class="text-[1.2rem] font-bold">Categories</li>
-                  <li class="bg-[#15803D] text-white p-1 rounded-[5px]">
-                    All Trees
-                  </li>
+                  <li class="p-1">All Trees</li>
                   <li class="p-1">Fruit Trees</li>
                   <li class="p-1">Flowering Trees</li>
                   <li class="p-1">Shade Trees</li>
@@ -306,10 +308,12 @@
           </div>
         </div>
       </section>
-      <section class="bg-[#F0FDF4]">
-        <h1 class="md:text-2xl text-center font-bold">Featured Episodes</h1>
+      <section class="bg-[#cbedd9]">
+        <h1 class="md:text-2xl text-center font-bold md:pt-10 p-5">
+          Featured Episodes
+        </h1>
         <div
-          class="md:w-[1340px] w-[250px] md:h-[500px] justify-center md:flex md:gap-5 mx-auto pt-5"
+          class="md:w-[1340px] w-[250px] md:h-[500px] h-[1970px] justify-center md:flex md:gap-5 mx-auto pt-5"
         >
           <div
             class="h-[360px] w-[250px] mb-5 p-1.5 rounded-[5px] bg-white shadow-xl/30"
@@ -513,7 +517,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-[#CFF0DC] md:h-[250px] h-[450px]">
+      <section class="bg-[#a1e4bb] md:h-[250px] h-[450px]">
         <h1 class="text-center font-bold text-2xl md:pt-[50px]">Our Impact</h1>
         <div
           class="grid md:grid-cols-4 grid-cols-1 md:grid-rows-1 grid-rows-4 md:w-[1320px] w-[325px] md:h-[110px] h-[400px] mx-auto pt-5"
@@ -540,12 +544,18 @@
       </section>
       <section class="bg-[#166534] h-[500px]">
         <div>
-          <h1 class="text-center font-bold text-2xl md:pt-[90px] pt-[50px] pb-3 text-white">Plant a Tree Today</h1>
-          <form class="sm:w-[520px] w-[320px] h-[300px] mx-auto bg-[#15803D] rounded-[15px]">
+          <h1
+            class="text-center font-bold text-2xl md:pt-[90px] pt-[50px] pb-3 text-white"
+          >
+            Plant a Tree Today
+          </h1>
+          <form
+            class="sm:w-[520px] w-[320px] h-[300px] mx-auto bg-[#15803D] rounded-[15px]"
+          >
             <div class="flex-col">
               <div class="sm:w-[400px] w-[300px] pt-5 mx-auto">
                 <input
-                  class="bg-white sm:w-[400px] w-[300px] h-[50px] pl-5 rounded-lg"
+                  class="bg-white sm:w-[400px] w-[300px] h-[50px] pl-5 rounded-lg focus:outline-hidden"
                   type="text"
                   name="name"
                   id=""
@@ -554,14 +564,19 @@
               </div>
               <div class="sm:w-[400px] w-[300px] pt-5 mx-auto">
                 <input
-                  class="bg-white sm:w-[400px] w-[300px] h-[50px] pl-5 rounded-lg"
+                  class="bg-white sm:w-[400px] w-[300px] h-[50px] pl-5 rounded-lg focus:outline-hidden"
                   type="email"
                   name="email"
-                  id="" placeholder="Your Email Address"
+                  id=""
+                  placeholder="Your Email Address"
                 />
               </div>
               <div class="sm:w-[400px] w-[300px] pt-5 mx-auto">
-                <select class="bg-white sm:w-[400px] w-[300px] h-[50px] pl-5 rounded-lg" name="" id="">
+                <select
+                  class="bg-white sm:w-[400px] w-[300px] h-[50px] pl-5 rounded-lg focus:outline-hidden"
+                  name=""
+                  id=""
+                >
                   <option value="">Number Of Trees</option>
                   <option value="">1</option>
                   <option value="">2</option>
@@ -572,12 +587,23 @@
                 </select>
               </div>
               <div class="sm:w-[400px] w-[300px] pt-5 mx-auto">
-                <input class="bg-[#FACC15] text-[#15803D] sm:w-[400px] w-[300px] h-[50px] sm:pl-5 rounded-lg cursor-pointer" type="button" value="Donate Now"/>
+                <input
+                  class="bg-[#FACC15] text-[#15803D] sm:w-[400px] w-[300px] h-[50px] rounded-lg cursor-pointer"
+                  type="button"
+                  value="Donate Now"
+                />
               </div>
             </div>
           </form>
         </div>
       </section>
     </main>
+    <footer
+      class="w-full h-[70px] bg-[#14532D] flex justify-center items-center"
+    >
+      <p class="text-white sm:text-[1.2rem] text-[0.8rem]">
+        © 2026 Green Earth. All Rights Reserved Md.Sultanul Alam
+      </p>
+    </footer>
   </body>
 </html>
