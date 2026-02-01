@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green-Earth</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="">
+    <header class="bg-[#15803D] w-full">
+      <nav
+        class="flex md:gap-5 justify-between items-center md:pl-[135px] pl-10 md:pr-[135px] pr-10 pt-4 pb-4 text-[#ffffff]"
+      >
+        <div class="md:text-[1.2rem] cursor-pointer">
+          <span>Green Earth</span>
+        </div>
+        <div class="">
+          <ul class="md:flex md:gap-6 md:cursor-pointer hidden">
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Plant a Tree</li>
+          </ul>
+        </div>
+        <div class="flex gap-3">
+          <button
+            class="md:text-[1.2rem] bg-[#FACC15] text-[#15803D] rounded-3xl pl-3 pr-3 cursor-pointer"
+          >
+            Submit
+          </button>
+          <div class="text-white md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="flex justify-center items-center md:h-[383px] sm:h-[250px] h-[200px] bg-[#CFF0DC]"
+      >
+        <img
+          class="md:w-[546px] w-[100px] sm:w-[300px]"
+          src="./assets/hero-leaf1.png"
+          alt=""
+        />
+        <div
+          class="md:h-35 text-center gap-2 flex flex-col items-center text-[0.8rem]"
+        >
+          <h1 class="md:text-4xl font-bold">Plant a Tree, Grow a Future</h1>
+          <p>
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <button
+            class="md:text-[1.2rem] bg-[#FACC15] text-[#15803D] rounded-3xl pl-3 pr-3 cursor-pointer w-40"
+          >
+            Get Involved
+          </button>
+        </div>
+        <img
+          class="md:w-[546px] w-[100px] sm:w-[300px]"
+          src="./assets/hero-leaf2.png"
+          alt=""
+        />
+      </section>
+      <section class="bg-[#F0FDF4] md:h-[1100px] h-[2500px] flex items-center">
+        <div class="w-[1400px] md:h-[920px] h-[2450px] pt-5 mx-auto">
+          <h1 class="md:text-2xl text-center font-bold">Choose Your Trees</h1>
+          <div class="md:hidden w-[250px] pt-3 mx-auto">
+            <label for="cars">Categories:</label>
+            <select name="trees" id="trees">
+              <option value="all_trees">All Trees</option>
+              <option value="fruit_trees">Fruit Trees</option>
+              <option value="flowering_trees">Flowering Trees</option>
+              <option value="shade_trees">Shade Trees</option>
+              <option value="medicinal_trees">Medicinal Trees</option>
+              <option value="timber_trees">Timber Trees</option>
+              <option value="evergreen_trees">Evergreen Trees</option>
+              <option value="ornamental_plants">Ornamental Plants</option>
+              <option value="bamboo">Bamboo</option>
+              <option value="climbers">Climbers</option>
+              <option value="aquatic_plants">Aquatic Plants</option>
+            </select>
+          </div>
+          <div class="md:w-full w-[300px] flex mx-auto">
+            <div
+              class="mt-10 p-5 grid md:grid-cols-5 grid-cols-1 gap-5 md:w-full w-[300px] md:grid-rows-2 md:h-[800px] h-[2300px]"
+            >
+              <div
+                class="h-[750px] w-[250px] row-span-2 rounded-[5px] bg-white shadow-xl/30 md:block hidden"
+              >
+                <ul class="p-5 flex flex-col gap-2">
+                  <li class="text-[1.2rem] font-bold">Categories</li>
+                  <li class="bg-[#15803D] text-white p-1 rounded-[5px]">
+                    All Trees
+                  </li>
+                  <li class="p-1">Fruit Trees</li>
+                  <li class="p-1">Flowering Trees</li>
+                  <li class="p-1">Shade Trees</li>
+                  <li class="p-1">Medicinal Trees</li>
+                  <li class="p-1">Timber Trees</li>
+                  <li class="p-1">Evergreen Trees</li>
+                  <li class="p-1">Ornamental Plants</li>
+                  <li class="p-1">Bamboo</li>
+                  <li class="p-1">Climbers</li>
+                  <li class="p-1">Aquatic Plants</li>
+                </ul>
+              </div>
+              <div
+                class="h-[360px] w-[250px] p-1.5 rounded-[5px] bg-white shadow-xl/30"
+              >
+                <img class="rounded-[5px]" src="./assets/bonsai.jpg" alt="" />
+                <p class="font-bold">Bonsai</p>
+                <p>
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <div class="flex flex-col gap-1">
+                  <div>
+                    <ul class="flex justify-between">
+                      <li
+                        class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px"
+                      >
+                        Fruit Tree
+                      </li>
+                      <li>৳500</li>
+                    </ul>
+                  </div>
+                  <button
+                    class="bg-[#15803D] text-[#ffffff] rounded-[5px] p-px cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div
+                class="h-[360px] w-[250px] p-1.5 rounded-[5px] bg-white shadow-xl/30"
+              >
+                <img class="rounded-[5px]" src="./assets/bonsai.jpg" alt="" />
+                <p class="font-bold">Bonsai</p>
+                <p>
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <div class="flex flex-col gap-1">
+                  <div>
+                    <ul class="flex justify-between">
+                      <li
+                        class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px"
+                      >
+                        Fruit Tree
+                      </li>
+                      <li>৳500</li>
+                    </ul>
+                  </div>
+                  <button
+                    class="bg-[#15803D] text-[#ffffff] rounded-[5px] p-px cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div
+                class="h-[360px] w-[250px] p-1.5 rounded-[5px] bg-white shadow-xl/30"
+              >
+                <img class="rounded-[5px]" src="./assets/bonsai.jpg" alt="" />
+                <p class="font-bold">Bonsai</p>
+                <p>
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <div class="flex flex-col gap-1">
+                  <div>
+                    <ul class="flex justify-between">
+                      <li
+                        class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px"
+                      >
+                        Fruit Tree
+                      </li>
+                      <li>৳500</li>
+                    </ul>
+                  </div>
+                  <button
+                    class="bg-[#15803D] text-[#ffffff] rounded-[5px] p-px cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div
+                class="h-[750px] w-[250px] row-span-2 rounded-[5px] p-5 bg-white shadow-xl/30 md:block hidden"
+              >
+                <p class="text-[1.2rem] font-bold">Your Cart</p>
+                <div class="flex flex-col gap-2">
+                  <div class="bg-[#F0FDF4] p-1.5 rounded-[5px]">
+                    <p>Mango Tree</p>
+                    <p>৳500 x 1</p>
+                  </div>
+                  <div class="bg-[#F0FDF4] p-1.5 rounded-[5px]">
+                    <p>Mango Tree</p>
+                    <p>৳500 x 1</p>
+                  </div>
+                </div>
+                <br />
+                <hr />
+                <div>
+                  <ul class="flex justify-between">
+                    <li>Total:</li>
+                    <li>৳1000</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="h-[360px] w-[250px] p-1.5 rounded-[5px] bg-white shadow-xl/30"
+              >
+                <img class="rounded-[5px]" src="./assets/bonsai.jpg" alt="" />
+                <p class="font-bold">Bonsai</p>
+                <p>
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <div class="flex flex-col gap-1">
+                  <div>
+                    <ul class="flex justify-between">
+                      <li
+                        class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px"
+                      >
+                        Fruit Tree
+                      </li>
+                      <li>৳500</li>
+                    </ul>
+                  </div>
+                  <button
+                    class="bg-[#15803D] text-[#ffffff] rounded-[5px] p-px cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div
+                class="h-[360px] w-[250px] p-1.5 rounded-[5px] bg-white shadow-xl/30"
+              >
+                <img class="rounded-[5px]" src="./assets/bonsai.jpg" alt="" />
+                <p class="font-bold">Bonsai</p>
+                <p>
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <div class="flex flex-col gap-1">
+                  <div>
+                    <ul class="flex justify-between">
+                      <li
+                        class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px"
+                      >
+                        Fruit Tree
+                      </li>
+                      <li>৳500</li>
+                    </ul>
+                  </div>
+                  <button
+                    class="bg-[#15803D] text-[#ffffff] rounded-[5px] p-px cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div
+                class="h-[360px] w-[250px] p-1.5 rounded-[5px] bg-white shadow-xl/30"
+              >
+                <img class="rounded-[5px]" src="./assets/bonsai.jpg" alt="" />
+                <p class="font-bold">Bonsai</p>
+                <p>
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <div class="flex flex-col gap-1">
+                  <div>
+                    <ul class="flex justify-between">
+                      <li
+                        class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px"
+                      >
+                        Fruit Tree
+                      </li>
+                      <li>৳500</li>
+                    </ul>
+                  </div>
+                  <button
+                    class="bg-[#15803D] text-[#ffffff] rounded-[5px] p-px cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#F0FDF4]">
+        <h1 class="md:text-2xl text-center font-bold">Featured Episodes</h1>
+        <div
+          class="md:w-[1340px] w-[250px] md:h-[500px] justify-center md:flex md:gap-5 mx-auto pt-5"
+        >
+          <div
+            class="h-[360px] w-[250px] mb-5 p-1.5 rounded-[5px] bg-white shadow-xl/30"
+          >
+            
+            <iframe class="w-full rounded-[5px]" src="https://www.youtube.com/embed/d-0IN2pt2kI?si=ORpgiEiz3qXmnemV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="font-bold">Bonsai</p>
+            <br />
+            <p>
+              A fast-growing tropical tree that produces delicious, juicy
+              mangoes during summer. Its dense green
+            </p>
+            <div class="flex flex-col gap-1">
+              <div>
+                <ul class="flex justify-between">
+                  <li class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px">
+                    Fruit Tree
+                  </li>
+                  <li>৳500</li>
+                </ul>
+              </div>
+              <p class="text-[#000000] rounded-[5px] p-px flex justify-end">
+                16:09 min
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-[360px] w-[250px] mb-5 p-1.5 rounded-[5px] bg-white shadow-xl/30"
+          >
+           
+            <iframe class="w-full rounded-[5px]" src="https://www.youtube.com/embed/d-0IN2pt2kI?si=ORpgiEiz3qXmnemV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="font-bold">Bonsai</p>
+            <br />
+            <p>
+              A fast-growing tropical tree that produces delicious, juicy
+              mangoes during summer. Its dense green
+            </p>
+            <div class="flex flex-col gap-1">
+              <div>
+                <ul class="flex justify-between">
+                  <li class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px">
+                    Fruit Tree
+                  </li>
+                  <li>৳500</li>
+                </ul>
+              </div>
+              <p class="text-[#000000] rounded-[5px] p-px flex justify-end">
+                16:09 min
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-[360px] w-[250px] mb-5 p-1.5 rounded-[5px] bg-white shadow-xl/30"
+          >
+           
+            <iframe class="w-full rounded-[5px]" src="https://www.youtube.com/embed/d-0IN2pt2kI?si=ORpgiEiz3qXmnemV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="font-bold">Bonsai</p>
+            <br />
+            <p>
+              A fast-growing tropical tree that produces delicious, juicy
+              mangoes during summer. Its dense green
+            </p>
+            <div class="flex flex-col gap-1">
+              <div>
+                <ul class="flex justify-between">
+                  <li class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px">
+                    Fruit Tree
+                  </li>
+                  <li>৳500</li>
+                </ul>
+              </div>
+              <p class="text-[#000000] rounded-[5px] p-px flex justify-end">
+                16:09 min
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-[360px] w-[250px] mb-5 p-1.5 rounded-[5px] bg-white shadow-xl/30"
+          >
+            
+            <iframe class="w-full rounded-[5px]" src="https://www.youtube.com/embed/d-0IN2pt2kI?si=ORpgiEiz3qXmnemV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="font-bold">Bonsai</p>
+            <br />
+            <p>
+              A fast-growing tropical tree that produces delicious, juicy
+              mangoes during summer. Its dense green
+            </p>
+            <div class="flex flex-col gap-1">
+              <div>
+                <ul class="flex justify-between">
+                  <li class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px">
+                    Fruit Tree
+                  </li>
+                  <li>৳500</li>
+                </ul>
+              </div>
+              <p class="text-[#000000] rounded-[5px] p-px flex justify-end">
+                16:09 min
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-[360px] w-[250px] mb-5 p-1.5 rounded-[5px] bg-white shadow-xl/30"
+          >
+          
+            <iframe class="w-full rounded-[5px]" src="https://www.youtube.com/embed/d-0IN2pt2kI?si=ORpgiEiz3qXmnemV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="font-bold">Bonsai</p>
+            <br />
+            <p>
+              A fast-growing tropical tree that produces delicious, juicy
+              mangoes during summer. Its dense green
+            </p>
+            <div class="flex flex-col gap-1">
+              <div>
+                <ul class="flex justify-between">
+                  <li class="bg-[#DCFCE7] text-[#15803D] rounded-[3px] p-px">
+                    Fruit Tree
+                  </li>
+                  <li>৳500</li>
+                </ul>
+              </div>
+              <p class="text-[#000000] rounded-[5px] p-px flex justify-end">
+                16:09 min
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
